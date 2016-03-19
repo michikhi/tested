@@ -1,41 +1,107 @@
-I, [2016-03-19T19:42:26.213562 #11307]  INFO -- default-opscode-centos-71: -----> Cleaning up any prior instances of <default-opscode-centos-71>
-I, [2016-03-19T19:42:26.214092 #11307]  INFO -- default-opscode-centos-71: -----> Destroying <default-opscode-centos-71>...
-I, [2016-03-19T19:42:28.092958 #11307]  INFO -- default-opscode-centos-71: ==> default: Forcing shutdown of VM...
-I, [2016-03-19T19:42:29.168576 #11307]  INFO -- default-opscode-centos-71: ==> default: Destroying VM and associated drives...
-I, [2016-03-19T19:42:29.414186 #11307]  INFO -- default-opscode-centos-71: Vagrant instance <default-opscode-centos-71> destroyed.
-I, [2016-03-19T19:42:29.416297 #11307]  INFO -- default-opscode-centos-71: Finished destroying <default-opscode-centos-71> (0m3.20s).
-I, [2016-03-19T19:42:29.417410 #11307]  INFO -- default-opscode-centos-71: -----> Testing <default-opscode-centos-71>
-I, [2016-03-19T19:42:29.417582 #11307]  INFO -- default-opscode-centos-71: -----> Creating <default-opscode-centos-71>...
-I, [2016-03-19T19:42:30.447992 #11307]  INFO -- default-opscode-centos-71: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2016-03-19T19:42:30.612512 #11307]  INFO -- default-opscode-centos-71: ==> default: Importing base box 'opscode-centos-7.1'...
-I, [2016-03-19T19:42:35.218756 #11307]  INFO -- default-opscode-centos-71: [KProgress: 20%[KProgress: 50%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
-I, [2016-03-19T19:42:35.812709 #11307]  INFO -- default-opscode-centos-71: ==> default: Setting the name of the VM: kitchen-tested-default-opscode-centos-71_default_1458412955776_91583
-I, [2016-03-19T19:42:36.124288 #11307]  INFO -- default-opscode-centos-71: ==> default: Clearing any previously set network interfaces...
-I, [2016-03-19T19:42:36.166098 #11307]  INFO -- default-opscode-centos-71: ==> default: Preparing network interfaces based on configuration...
-I, [2016-03-19T19:42:36.166403 #11307]  INFO -- default-opscode-centos-71:     default: Adapter 1: nat
-I, [2016-03-19T19:42:36.214242 #11307]  INFO -- default-opscode-centos-71: ==> default: Forwarding ports...
-I, [2016-03-19T19:42:36.278673 #11307]  INFO -- default-opscode-centos-71:     default: 22 => 2222 (adapter 1)
-I, [2016-03-19T19:42:36.407511 #11307]  INFO -- default-opscode-centos-71: ==> default: Booting VM...
-I, [2016-03-19T19:42:36.866528 #11307]  INFO -- default-opscode-centos-71: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2222
-I, [2016-03-19T19:42:36.866633 #11307]  INFO -- default-opscode-centos-71:     default: SSH username: vagrant
-I, [2016-03-19T19:42:36.866771 #11307]  INFO -- default-opscode-centos-71:     default: SSH auth method: private key
-I, [2016-03-19T19:42:52.019455 #11307]  INFO -- default-opscode-centos-71:     default: Warning: Connection timeout. Retrying...
-I, [2016-03-19T19:42:52.599837 #11307]  INFO -- default-opscode-centos-71:     default: 
-I, [2016-03-19T19:42:52.599913 #11307]  INFO -- default-opscode-centos-71:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2016-03-19T19:42:52.599938 #11307]  INFO -- default-opscode-centos-71:     default: this with a newly generated keypair for better security.
-I, [2016-03-19T19:42:54.745854 #11307]  INFO -- default-opscode-centos-71:     default: 
-I, [2016-03-19T19:42:54.745927 #11307]  INFO -- default-opscode-centos-71:     default: Inserting generated public key within guest...
-I, [2016-03-19T19:42:55.218277 #11307]  INFO -- default-opscode-centos-71:     default: Removing insecure key from the guest if its present...
-I, [2016-03-19T19:42:55.566744 #11307]  INFO -- default-opscode-centos-71:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2016-03-19T19:42:56.688932 #11307]  INFO -- default-opscode-centos-71: ==> default: Machine booted and ready!
-I, [2016-03-19T19:42:56.689533 #11307]  INFO -- default-opscode-centos-71: ==> default: Checking for guest additions in VM...
-I, [2016-03-19T19:42:56.726605 #11307]  INFO -- default-opscode-centos-71:     default: The guest additions on this VM do not match the installed version of
-I, [2016-03-19T19:42:56.726696 #11307]  INFO -- default-opscode-centos-71:     default: VirtualBox! In most cases this is fine, but in rare cases it can
-I, [2016-03-19T19:42:56.726727 #11307]  INFO -- default-opscode-centos-71:     default: prevent things such as shared folders from working properly. If you see
-I, [2016-03-19T19:42:56.726754 #11307]  INFO -- default-opscode-centos-71:     default: shared folder errors, please make sure the guest additions within the
-I, [2016-03-19T19:42:56.726780 #11307]  INFO -- default-opscode-centos-71:     default: virtual machine match the version of VirtualBox you have installed on
-I, [2016-03-19T19:42:56.726804 #11307]  INFO -- default-opscode-centos-71:     default: your host and reload your VM.
-I, [2016-03-19T19:42:56.726824 #11307]  INFO -- default-opscode-centos-71:     default: 
-I, [2016-03-19T19:42:56.726846 #11307]  INFO -- default-opscode-centos-71:     default: Guest Additions Version: 5.0.6
-I, [2016-03-19T19:42:56.726868 #11307]  INFO -- default-opscode-centos-71:     default: VirtualBox Version: 4.3
-I, [2016-03-19T19:42:56.727134 #11307]  INFO -- default-opscode-centos-71: ==> default: Setting hostname...
+I, [2016-03-19T19:50:37.879741 #11666]  INFO -- default-opscode-centos-71: -----> Creating <default-opscode-centos-71>...
+I, [2016-03-19T19:50:38.881522 #11666]  INFO -- default-opscode-centos-71: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-03-19T19:50:39.189937 #11666]  INFO -- default-opscode-centos-71: ==> default: Importing base box 'opscode-centos-7.1'...
+I, [2016-03-19T19:50:43.914142 #11666]  INFO -- default-opscode-centos-71: [KProgress: 20%[KProgress: 50%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-03-19T19:50:44.480620 #11666]  INFO -- default-opscode-centos-71: ==> default: Setting the name of the VM: kitchen-tested-default-opscode-centos-71_default_1458413444445_12831
+I, [2016-03-19T19:50:44.798434 #11666]  INFO -- default-opscode-centos-71: ==> default: Clearing any previously set network interfaces...
+I, [2016-03-19T19:50:44.841462 #11666]  INFO -- default-opscode-centos-71: ==> default: Preparing network interfaces based on configuration...
+I, [2016-03-19T19:50:44.841785 #11666]  INFO -- default-opscode-centos-71:     default: Adapter 1: nat
+I, [2016-03-19T19:50:44.884442 #11666]  INFO -- default-opscode-centos-71: ==> default: Forwarding ports...
+I, [2016-03-19T19:50:44.946620 #11666]  INFO -- default-opscode-centos-71:     default: 22 => 2222 (adapter 1)
+I, [2016-03-19T19:50:45.081335 #11666]  INFO -- default-opscode-centos-71: ==> default: Booting VM...
+I, [2016-03-19T19:50:45.602175 #11666]  INFO -- default-opscode-centos-71: ==> default: Waiting for machine to boot. This may take a few minutes...    default: SSH address: 127.0.0.1:2222
+I, [2016-03-19T19:50:45.602311 #11666]  INFO -- default-opscode-centos-71:     default: SSH username: vagrant
+I, [2016-03-19T19:50:45.602657 #11666]  INFO -- default-opscode-centos-71:     default: SSH auth method: private key
+I, [2016-03-19T19:51:00.763446 #11666]  INFO -- default-opscode-centos-71:     default: Warning: Connection timeout. Retrying...
+I, [2016-03-19T19:51:01.442995 #11666]  INFO -- default-opscode-centos-71:     default: 
+I, [2016-03-19T19:51:01.443064 #11666]  INFO -- default-opscode-centos-71:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-03-19T19:51:01.443104 #11666]  INFO -- default-opscode-centos-71:     default: this with a newly generated keypair for better security.
+I, [2016-03-19T19:51:02.584996 #11666]  INFO -- default-opscode-centos-71:     default: 
+I, [2016-03-19T19:51:02.585074 #11666]  INFO -- default-opscode-centos-71:     default: Inserting generated public key within guest...
+I, [2016-03-19T19:51:02.849366 #11666]  INFO -- default-opscode-centos-71:     default: Removing insecure key from the guest if its present...
+I, [2016-03-19T19:51:03.002710 #11666]  INFO -- default-opscode-centos-71:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-03-19T19:51:03.403800 #11666]  INFO -- default-opscode-centos-71: ==> default: Machine booted and ready!
+I, [2016-03-19T19:51:03.404175 #11666]  INFO -- default-opscode-centos-71: ==> default: Checking for guest additions in VM...
+I, [2016-03-19T19:51:03.438178 #11666]  INFO -- default-opscode-centos-71:     default: The guest additions on this VM do not match the installed version of
+I, [2016-03-19T19:51:03.438294 #11666]  INFO -- default-opscode-centos-71:     default: VirtualBox! In most cases this is fine, but in rare cases it can
+I, [2016-03-19T19:51:03.438357 #11666]  INFO -- default-opscode-centos-71:     default: prevent things such as shared folders from working properly. If you see
+I, [2016-03-19T19:51:03.438410 #11666]  INFO -- default-opscode-centos-71:     default: shared folder errors, please make sure the guest additions within the
+I, [2016-03-19T19:51:03.438496 #11666]  INFO -- default-opscode-centos-71:     default: virtual machine match the version of VirtualBox you have installed on
+I, [2016-03-19T19:51:03.438550 #11666]  INFO -- default-opscode-centos-71:     default: your host and reload your VM.
+I, [2016-03-19T19:51:03.438597 #11666]  INFO -- default-opscode-centos-71:     default: 
+I, [2016-03-19T19:51:03.438710 #11666]  INFO -- default-opscode-centos-71:     default: Guest Additions Version: 5.0.6
+I, [2016-03-19T19:51:03.438752 #11666]  INFO -- default-opscode-centos-71:     default: VirtualBox Version: 4.3
+I, [2016-03-19T19:51:03.439839 #11666]  INFO -- default-opscode-centos-71: ==> default: Setting hostname...
+I, [2016-03-19T19:51:04.679653 #11666]  INFO -- default-opscode-centos-71: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2016-03-19T19:51:06.686285 #11666]  INFO -- default-opscode-centos-71: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2016-03-19T19:51:06.696915 #11666]  INFO -- default-opscode-centos-71: [SSH] Established
+I, [2016-03-19T19:51:06.697310 #11666]  INFO -- default-opscode-centos-71: Vagrant instance <default-opscode-centos-71> created.
+I, [2016-03-19T19:51:06.699239 #11666]  INFO -- default-opscode-centos-71: Finished creating <default-opscode-centos-71> (0m28.82s).
+I, [2016-03-19T19:51:06.699459 #11666]  INFO -- default-opscode-centos-71: -----> Converging <default-opscode-centos-71>...
+I, [2016-03-19T19:51:06.700681 #11666]  INFO -- default-opscode-centos-71: Preparing files for transfer
+I, [2016-03-19T19:51:06.700783 #11666]  INFO -- default-opscode-centos-71: Preparing dna.json
+I, [2016-03-19T19:51:06.701284 #11666]  INFO -- default-opscode-centos-71: Preparing current project directory as a cookbook
+I, [2016-03-19T19:51:06.705648 #11666]  INFO -- default-opscode-centos-71: Removing non-cookbook files before transfer
+I, [2016-03-19T19:51:06.708685 #11666]  INFO -- default-opscode-centos-71: Preparing solo.rb
+I, [2016-03-19T19:51:06.854794 #11666]  INFO -- default-opscode-centos-71: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2016-03-19T19:51:06.865991 #11666]  INFO -- default-opscode-centos-71: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-03-19T19:51:06.882127 #11666]  INFO -- default-opscode-centos-71: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-03-19T19:51:06.882185 #11666]  INFO -- default-opscode-centos-71: Trying wget...
+I, [2016-03-19T19:51:07.262722 #11666]  INFO -- default-opscode-centos-71: Download complete.
+I, [2016-03-19T19:51:07.338881 #11666]  INFO -- default-opscode-centos-71: Getting information for chef stable  for el...
+I, [2016-03-19T19:51:07.338967 #11666]  INFO -- default-opscode-centos-71: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2016-03-19T19:51:07.339013 #11666]  INFO -- default-opscode-centos-71:   to file /tmp/install.sh.6207/metadata.txt
+I, [2016-03-19T19:51:07.342232 #11666]  INFO -- default-opscode-centos-71: trying wget...
+I, [2016-03-19T19:51:08.259093 #11666]  INFO -- default-opscode-centos-71: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.8.1-1.el7.x86_64.rpm
+I, [2016-03-19T19:51:08.259161 #11666]  INFO -- default-opscode-centos-71: md5	cd02aab2dd9461d2f30810954782a409
+I, [2016-03-19T19:51:08.259187 #11666]  INFO -- default-opscode-centos-71: sha256	a9c80dfc45b5204684cb5344e77230ff3403a5f8d057dd063b0707d785ccd236
+I, [2016-03-19T19:51:08.269932 #11666]  INFO -- default-opscode-centos-71: downloaded metadata file looks valid...
+I, [2016-03-19T19:51:08.299861 #11666]  INFO -- default-opscode-centos-71: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/7/x86_64/chef-12.8.1-1.el7.x86_64.rpm
+I, [2016-03-19T19:51:08.299936 #11666]  INFO -- default-opscode-centos-71:   to file /tmp/install.sh.6207/chef-12.8.1-1.el7.x86_64.rpm
+I, [2016-03-19T19:51:08.302964 #11666]  INFO -- default-opscode-centos-71: trying wget...
+I, [2016-03-19T19:52:32.407531 #11666]  INFO -- default-opscode-centos-71: Comparing checksum with sha256sum...
+I, [2016-03-19T19:52:32.715553 #11666]  INFO -- default-opscode-centos-71: 
+I, [2016-03-19T19:52:32.715649 #11666]  INFO -- default-opscode-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-03-19T19:52:32.715697 #11666]  INFO -- default-opscode-centos-71: 
+I, [2016-03-19T19:52:32.715722 #11666]  INFO -- default-opscode-centos-71: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-03-19T19:52:32.715740 #11666]  INFO -- default-opscode-centos-71: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-03-19T19:52:32.715758 #11666]  INFO -- default-opscode-centos-71: be upgraded without warning on new releases, even to new major releases.
+I, [2016-03-19T19:52:32.715773 #11666]  INFO -- default-opscode-centos-71: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-03-19T19:52:32.715788 #11666]  INFO -- default-opscode-centos-71: CI/CD environments.
+I, [2016-03-19T19:52:32.715803 #11666]  INFO -- default-opscode-centos-71: 
+I, [2016-03-19T19:52:32.715818 #11666]  INFO -- default-opscode-centos-71: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-03-19T19:52:32.715851 #11666]  INFO -- default-opscode-centos-71: 
+I, [2016-03-19T19:52:32.715865 #11666]  INFO -- default-opscode-centos-71: Installing chef 
+I, [2016-03-19T19:52:32.715886 #11666]  INFO -- default-opscode-centos-71: installing with rpm...
+I, [2016-03-19T19:52:32.763483 #11666]  INFO -- default-opscode-centos-71: warning: /tmp/install.sh.6207/chef-12.8.1-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2016-03-19T19:52:32.969000 #11666]  INFO -- default-opscode-centos-71: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2016-03-19T19:52:32.980428 #11666]  INFO -- default-opscode-centos-71: Updating / installing...
+I, [2016-03-19T19:52:37.294418 #11666]  INFO -- default-opscode-centos-71:                            (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2016-03-19T19:52:37.963084 #11666]  INFO -- default-opscode-centos-71: Thank you for installing Chef!
+I, [2016-03-19T19:52:38.107787 #11666]  INFO -- default-opscode-centos-71: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2016-03-19T19:52:38.140131 #11666]  INFO -- default-opscode-centos-71: Transferring files to <default-opscode-centos-71>
+I, [2016-03-19T19:52:38.290579 #11666]  INFO -- default-opscode-centos-71: /etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+I, [2016-03-19T19:52:39.184151 #11666]  INFO -- default-opscode-centos-71: Starting Chef Client, version 12.8.1
+I, [2016-03-19T19:52:40.242026 #11666]  INFO -- default-opscode-centos-71: Installing Cookbook Gems:
+I, [2016-03-19T19:52:40.242097 #11666]  INFO -- default-opscode-centos-71: Compiling Cookbooks...
+I, [2016-03-19T19:52:40.250639 #11666]  INFO -- default-opscode-centos-71: Converging 1 resources
+I, [2016-03-19T19:52:40.250695 #11666]  INFO -- default-opscode-centos-71: Recipe: tested::default
+I, [2016-03-19T19:52:40.250719 #11666]  INFO -- default-opscode-centos-71:   * cookbook_file[motd] action create
+I, [2016-03-19T19:52:40.250738 #11666]  INFO -- default-opscode-centos-71:     - create new file motd
+I, [2016-03-19T19:52:40.250755 #11666]  INFO -- default-opscode-centos-71:     - update content in file motd from none to 4355a4
+I, [2016-03-19T19:52:40.250774 #11666]  INFO -- default-opscode-centos-71:     --- motd	2016-03-19 18:52:38.852847395 +0000
+I, [2016-03-19T19:52:40.250807 #11666]  INFO -- default-opscode-centos-71:     +++ ./.chef-motd20160319-12382-1kcljn0	2016-03-19 18:52:38.852847395 +0000
+I, [2016-03-19T19:52:40.250823 #11666]  INFO -- default-opscode-centos-71:     @@ -1 +1,2 @@
+I, [2016-03-19T19:52:40.322771 #11666]  INFO -- default-opscode-centos-71: 
+I, [2016-03-19T19:52:40.322822 #11666]  INFO -- default-opscode-centos-71:     - restore selinux security context
+I, [2016-03-19T19:52:40.322853 #11666]  INFO -- default-opscode-centos-71: 
+I, [2016-03-19T19:52:40.322868 #11666]  INFO -- default-opscode-centos-71: Running handlers:
+I, [2016-03-19T19:52:40.322881 #11666]  INFO -- default-opscode-centos-71: Running handlers complete
+I, [2016-03-19T19:52:40.322895 #11666]  INFO -- default-opscode-centos-71: Chef Client finished, 1/1 resources updated in 01 seconds
+I, [2016-03-19T19:52:40.403681 #11666]  INFO -- default-opscode-centos-71: Finished converging <default-opscode-centos-71> (1m33.70s).
+I, [2016-03-19T19:52:40.404051 #11666]  INFO -- default-opscode-centos-71: -----> Setting up <default-opscode-centos-71>...
+I, [2016-03-19T19:52:40.407865 #11666]  INFO -- default-opscode-centos-71: Finished setting up <default-opscode-centos-71> (0m0.00s).
+I, [2016-03-19T19:52:40.408128 #11666]  INFO -- default-opscode-centos-71: -----> Verifying <default-opscode-centos-71>...
+I, [2016-03-19T19:52:40.409433 #11666]  INFO -- default-opscode-centos-71: Preparing files for transfer
+I, [2016-03-19T19:52:40.410119 #11666]  INFO -- default-opscode-centos-71: Transferring files to <default-opscode-centos-71>
+I, [2016-03-19T19:52:40.411143 #11666]  INFO -- default-opscode-centos-71: Finished verifying <default-opscode-centos-71> (0m0.00s).
