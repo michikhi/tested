@@ -1,12 +1,30 @@
 ---
 driver:
-  name: vagrant
+  require_chef_omnibus: true
 
 provisioner:
-  name: chef_solo
+  name: chef_zero
+  data_bags_path: <%= File.expand_path('data_bags') %>
 
 platforms:
+  - name: ec2
+    transport:
+      username: root
+      ssh_key: <%= ENV['AWS_SSH_KEY_ID'] %>
+    driver:
+      aws_ssh_key_id: sa-deploy-lab-ew1
+      image_id: ami-dfa51eac
+      name: ec2
+      region: eu-west-1
+      availability_zone: eu-west-1a
+      security_group_ids: ["sg-64c0b100","sg-fe22969a", "sg-d82296bc"]
+      instance_type: t2.small
+      subnet_id: "subnet-2c761875"
+    tags:
+      Name: aws-cf-jenkins
   - name: opscode-centos-7.1
+    driver:
+      name: vagrant
 
 suites:
   - name: default
