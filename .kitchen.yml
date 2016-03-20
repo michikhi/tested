@@ -12,7 +12,7 @@ platforms:
       username: root
       ssh_key: <%= ENV['AWS_SSH_KEY_ID'] %>
     driver:
-      aws_ssh_key_id: sa-deploy-lab-ew1
+      aws_ssh_key_id: sa-jenkins-lab-ew1
       image_id: ami-dfa51eac
       name: ec2
       region: eu-west-1
