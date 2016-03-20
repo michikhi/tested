@@ -1,5 +1,5 @@
 name 'tested'
-maintainer 'AsLL'
+maintainer 'AsDLL'
 maintainer_email 'mimoun.chikhi@ext.actelion.com'
 license 'All rights reserved'
 description 'Installs/Configures tested'
