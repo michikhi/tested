@@ -1,4 +1,4 @@
-require 'english'
+require 'English'
 
 task :integration do |_t, args|
    begin
